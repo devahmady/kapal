@@ -109,5 +109,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'manage', 'middleware' => 'rol
     Route::get('/pemesanan', 'PemesananController@index')->name('pemesanan.index');
     Route::put('/pemesanan/{id}/status', 'PemesananController@updateStatus')->name('pemesanan.updateStatus');
     Route::delete('/pemesanan/{id}/dell', 'PemesananController@destroy')->name('pemesanan.delete');
+    Route::get('/pemesanan/print', 'PemesananController@print')->name('pemesanan.print');
 });
 // sudah jadi
